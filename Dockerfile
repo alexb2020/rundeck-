@@ -48,7 +48,7 @@ RUN adduser --shell /bin/bash --home $HOME --gecos "" --disabled-password $USERN
 #RUNDECK build
 RUN cd /home/rundeck/rundeck && ./gradlew build
 VOLUME $HOME/rundeck   
-WORKDIR $HOME/runde\ck
+WORKDIR $HOME/rundeck
 
 
 #I had problems with the .jar and .war files that were generated with the compilation of the app, 
